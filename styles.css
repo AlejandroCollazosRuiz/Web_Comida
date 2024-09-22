@@ -1,277 +1,287 @@
-
-body, html {
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 header {
-    z-index: 10;
-    position: relative;
-    width: 100%;
-    margin-bottom: 0;
-    padding: 0;
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
 }
-
 
 .logo {
-    width: 150px;
-    margin-right: auto;
+  width: 150px;
+  margin-right: auto;
 }
 
-
+a {
+  text-decoration: none;
+}
 .hero-section {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-
 
 .carousel-item img {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    display: block;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  display: block;
 }
-
 
 .hero-section .overlay {
-    padding: 50px;
-    border-radius: 10px;
-    z-index: 5;
+  padding: 50px;
+  border-radius: 10px;
+  z-index: 5;
 }
-
 
 .carousel-indicators.vertical-indicators {
-    position: absolute;
-    top: 50%;
-    margin-left: 90%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  position: absolute;
+  top: 50%;
+  margin-left: 90%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-
 .carousel-indicators li {
-    background-color: #fff !important;
-    opacity: 0.5;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+  background-color: #fff !important;
+  opacity: 0.5;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .carousel-indicators li.active {
-    background-color: #ff9943 !important;
-    opacity: 1;
+  background-color: #ff9943 !important;
+  opacity: 1;
 }
 
 .carousel-indicators li {
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50%;
-    background-color: #fff !important;
-    transition: background-color 0.3s ease;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: #fff !important;
+  transition: background-color 0.3s ease;
 }
 
-
 #nosotros {
-    background-color: #000;
-    padding: 50px 0;
+  background-color: #000;
+  height: 100vh;
 }
 
 #nosotros h2 {
-    font-size: 3rem; 
-    margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 #nosotros p {
-    text-align: left; 
-    font-size: 1.1rem;
-    line-height: 1.6;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+.img-container {
+  float: left;
 }
 
 #nosotros img {
-    max-width: 100%; 
-    height: auto;
+  max-width: 100%;
+  height: 92.5vh;
 }
 
-
 #menu {
-    background-color: #ff9943; 
+  background-color: #ff9943;
 }
 
 #menu h2 {
-    font-size: 2.5rem;
-    color: white;
+  font-size: 2.5rem;
+  color: white;
 }
 
 .card {
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-    height: 120px; 
-    width: 100%; 
-    object-fit: contain; 
-    padding: 1px; 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  height: 120px;
+  width: 100%;
+  object-fit: contain;
+  padding: 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card-body {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
 .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
 }
-
 
 .full-width-img {
-    width: 100% !important;
-    height: auto;
-    object-fit: cover; 
+  width: 100% !important;
+  height: auto;
+  object-fit: cover;
 }
 
-
 .font-weight-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .card-text {
-    color: #ff9943;
-    font-weight: bold;
+  color: #ff9943;
+  font-weight: bold;
+}
+.btn-cart-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-
 .btn-agregar {
-    background-color: #000;
-    color: white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    justify-content: center; 
-    border: none;
-    margin-left: 40%;
+  width: 50%;
+  height: 5vh;
+  background-color: #000;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+  border: none;
+  position: relative;
+  left: 25%;
+}
+
+.btn-cart-container img {
+  width: 28px;
+  height: 5vh;
 }
 
 .btn-agregar:hover {
-    background-color: #444; 
+  background-color: #444;
 }
 
-.cart-icon {
-    width: 20px;
-    height: 20px;
+.like {
+  padding: 2;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
-.btn-cart-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
+.like img {
+  position: relative;
+  width: 25px;
+  margin-right: 15px;
+  top: 15%;
 }
 
 .btn-ver-menu {
-    background-color: #000;
-    color: white;
-    border-radius: 20px;
-    padding: 10px 30px;
-    border: none;
-    font-size: 1rem;
+  background-color: #000;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: none;
+  font-size: 1rem;
 }
 
 .btn-ver-menu:hover {
-    background-color: #444; 
+  background-color: #444;
 }
-
 
 @media (max-width: 768px) {
-    .hero-section {
-        height: 70vh;
-    }
+  .hero-section {
+    height: 70vh;
+  }
 
-    .carousel-item img {
-        height: 70vh;
-    }
+  .carousel-item img {
+    height: 70vh;
+  }
 
-    .hero-section .overlay {
-        padding: 30px;
-    }
+  .hero-section .overlay {
+    padding: 30px;
+  }
 
-    .carousel-indicators.vertical-indicators {
-        left: 10px;
-    }
+  .carousel-indicators.vertical-indicators {
+    left: 10px;
+  }
 
-    #nosotros h2 {
-        font-size: 2.5rem; 
-    }
+  #nosotros h2 {
+    font-size: 2.5rem;
+  }
 
-    .card img {
-        height: 100px; 
-    }
+  .card img {
+    height: 100px;
+  }
 
-    .btn-agregar {
-        float: none; 
-        width: 100%;
-    }
+  .btn-agregar {
+    float: none;
+    width: 100%;
+  }
 
-    .cart-icon {
-        width: 10px;
-        height: 10px;
-    }
+  .cart-icon {
+    width: 10px;
+    height: 10px;
+  }
 }
 
-
 .social-icons a {
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #f39c12;
+  color: #f39c12;
 }
 
-
 .btn {
-    background-color: #ff9943;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
+  background-color: #ff9943;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: #e67e22;
+  background-color: #e67e22;
 }
 
-
 #contacto .form-control {
-    background-color: #fff;
-    color: #000;
+  background-color: #fff;
+  color: #000;
 }
 
 #contacto button {
-    width: 100%;
+  width: 100%;
 }
 
-
 @media (max-width: 768px) {
-    #contacto .col-md-6 {
-        margin-bottom: 20px;
-    }
+  #contacto .col-md-6 {
+    margin-bottom: 20px;
+  }
 }
